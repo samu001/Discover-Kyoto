@@ -1,0 +1,18 @@
+.events-section {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.events-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 920px;
+}
+
+.events-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

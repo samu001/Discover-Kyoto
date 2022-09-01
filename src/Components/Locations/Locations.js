@@ -11,6 +11,7 @@ export default function Locations() {
                         <img
                             className="map-img"
                             src={require("../../Images/map.png")}
+                            alt="Map of Kyoto"
                         />
                         <MapItem top="50%" left="0%" bottom="0%" right="40%" />
                         <MapItem top="10%" left="20%" bottom="0%" right="0%" />

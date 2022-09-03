@@ -1,0 +1,9 @@
+.history-section{
+    background: black;
+}
+
+
+.active {
+    color: red;
+    font-weight: bold;
+}

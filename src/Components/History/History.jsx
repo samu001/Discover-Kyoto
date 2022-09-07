@@ -1,13 +1,36 @@
 import React, { useState, useEffect } from "react";
 import "./History.css";
+import arrowDown from "../../Images/arrow-down.svg";
+import arrowUp from "../../Images/arrow-up.svg";
+import ArrowIcon from "./ArrowIcon";
 
 function History() {
-    const data = ["Medival", "Edo", "Modern"];
+    const titleData = [
+        "Medival Age",
+        "Edo Period",
+        "Early Modern",
+        "Modern Period",
+    ];
+    const descData = [
+        "The Medival Period was a very period like no other cuse mevidval is in the name",
+        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur soluta aperiam voluptate sunt possimus sit odit dolorum nemo consequuntur debitis a reiciendis harum dolorem placeat, est explicabo natus quisquam. Magni!",
+        "The EARLY Modern Period is convinient to live in, but you dont have cool swords",
+        "The Modern Period is convinient to live in, but you have even less swords",
+    ];
+    const imgData = [
+        "https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
+        "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
+        "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
+    ];
 
     const [index, setIndex] = useState(0);
-    const [selected, setSelected] = useState();
 
-    function selectItem() {}
+    // When the state index change the whole component will be re render
+    // Applying the custom classes
+    function selectItem(i) {
+        setIndex(i);
+    }
 
     function moveUp() {
         setIndex((prevIndex) => {
@@ -21,7 +44,7 @@ function History() {
         });
     }
 
-    const arrLi = data.map((item, i) => {
+    const arrLi = titleData.map((item, i) => {
         return (
             <li
                 key={i}
@@ -33,12 +56,49 @@ function History() {
         );
     });
 
+    const description = descData.map((descItem, i) => {
+        return (
+            <p
+                key={i}
+                className={`${index === i ? "desc-active" : "desc-inactive"}`}
+            >
+                {descItem}
+            </p>
+        );
+    });
+
+    const historyImg = imgData.map((image, i) => {
+        let url = "";
+        let className = "";
+        if (index === i) {
+            url = `${image}`;
+            className = "img-active";
+        } else {
+            className = "img-inactive";
+        }
+
+        return (
+            <img
+                className={`${className}`}
+                src={url}
+                alt="Japan Image"
+                key={i}
+            />
+        );
+    });
+
     return (
         <>
-            <div>
-                <button onClick={moveUp}>Move Up</button>
-                <ul>{arrLi}</ul>
-                <button onClick={moveDown}>Move Down</button>
+            <div className="history-section">
+                <div className="slider-hist">
+                    <div className="selector">
+                        <button onClick={moveUp}>Up</button>
+                        <ul>{arrLi}</ul>
+                        <button onClick={moveDown}>Down</button>
+                    </div>
+                    <div className="description-hist">{description}</div>
+                    {historyImg}
+                </div>
             </div>
         </>
     );

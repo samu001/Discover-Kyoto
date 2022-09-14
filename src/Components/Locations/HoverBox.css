@@ -32,7 +32,6 @@
     width: 60%;
 }
 
-
 .hover-img-cont {
     height: 100%;
 }
@@ -43,14 +42,3 @@
     object-fit: cover;
     
 }
-
-
-  
-  @keyframes slide-in {
-    0% {
-      transform: translateY(-1000px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }

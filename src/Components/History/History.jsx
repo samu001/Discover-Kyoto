@@ -8,20 +8,23 @@ function History() {
     const titleData = [
         "Medival Age",
         "Edo Period",
-        "Early Modern",
+        "Early Modern Period",
         "Modern Period",
+        "Contemporary Age",
     ];
     const descData = [
         "The Medival Period was a very period like no other cuse mevidval is in the name",
-        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur soluta aperiam voluptate sunt possimus sit odit dolorum nemo consequuntur debitis a reiciendis harum dolorem placeat, est explicabo natus quisquam. Magni!",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur soluta aperiam voluptate sunt possimus sit odit dolorum nemo consequuntur debitis a reiciendis harum dolorem placeat, est explicabo natus quisquam. Magni!",
         "The EARLY Modern Period is convinient to live in, but you dont have cool swords",
         "The Modern Period is convinient to live in, but you have even less swords",
+        "The Contemporarry Period is convinient to live in, but you have no swords at all, instead u got guns...",
     ];
     const imgData = [
         "https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
         "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
         "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
+        "https://images.unsplash.com/photo-1468779065891-103dac4a7c48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGt5b3RvJTIwY2l0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60",
     ];
 
     const [index, setIndex] = useState(0);
@@ -48,7 +51,7 @@ function History() {
         return (
             <li
                 key={i}
-                className={`${index === i ? "active" : ""}`}
+                className={`${index === i ? "li-active" : "li-inactive"}`}
                 onClick={() => selectItem(i)}
             >
                 {item}
@@ -92,9 +95,13 @@ function History() {
             <div className="history-section">
                 <div className="slider-hist">
                     <div className="selector">
-                        <button onClick={moveUp}>Up</button>
-                        <ul>{arrLi}</ul>
-                        <button onClick={moveDown}>Down</button>
+                        <button className="silder-btn" onClick={moveUp}>
+                            {"<"}
+                        </button>
+                        <ul className="time-period-ul">{arrLi}</ul>
+                        <button className="silder-btn" onClick={moveDown}>
+                            {">"}
+                        </button>
                     </div>
                     <div className="description-hist">{description}</div>
                     {historyImg}

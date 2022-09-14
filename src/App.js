@@ -4,6 +4,7 @@ import CurrentEvents from "./Components/CurrentEvents/CurrentEvents";
 import Locations from "./Components/Locations/Locations";
 import History from "./Components/History/History";
 import Title from "./Components/UI/Title";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 description="A city with a rich history in every corner"
             />
             <History />
+            <Footer />
         </div>
     );
 }

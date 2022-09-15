@@ -5,6 +5,7 @@ import Locations from "./Components/Locations/Locations";
 import History from "./Components/History/History";
 import Title from "./Components/UI/Title";
 import Footer from "./Components/Footer/Footer";
+import Featured from "./Components/FeaturedLocation/Featured";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 description="You cannot miss this amazing activities around Kyoto"
             />
             <CurrentEvents />
+            <Featured location={"Inari Temple"} />
             <Title
                 title="LOCATIONS"
                 theme="light"

@@ -1,9 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;700&display=swap');
+ 
 
 * {
     font-family: 'Karla', sans-serif;
     margin: 0;
+    --red: #F30039;
+    --white: #ffffff;
 }
 
 .App {

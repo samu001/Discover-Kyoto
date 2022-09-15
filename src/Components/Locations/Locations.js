@@ -5,7 +5,7 @@ import "./Locations.css";
 export default function Locations() {
     return (
         <>
-            <div className="locations-section">
+            <div className="locations-section" id="locations">
                 <div className="map">
                     <div className="map-img-wrapper">
                         <img

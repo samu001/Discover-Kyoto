@@ -1,9 +1,11 @@
 .card {
-    max-width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 220px;
     height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    margin: 0 1rem;
-    padding: 2rem;
+    margin: 0.6rem 1rem;
+    padding: 1rem;
+    background-color: aliceblue;
 }
 
 .cardImg {
@@ -30,8 +32,12 @@
 }
 
 
-
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: 60%;
+  }
+}
 
 
 

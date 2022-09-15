@@ -19,50 +19,39 @@ export default function CurrentEvents() {
         );
     });
 
-    const [indexes, setIndexes] = useState([0,3])
+    // const [indexes, setIndexes] = useState([0,3])
 
-    function nextIndexes(){
+    // function nextIndexes(){
+    //     const endOfSplit = indexes[1]
+    //     if(endOfSplit <= (cardElements.length -1)) {
+    //         setIndexes(prevIndexes => {
+    //             const newIndexes = prevIndexes.map( item => {
+    //                 return item + 3
+    //             })
+    //             return newIndexes
+    //         })
+    //     }
+    // }
 
-        const endOfSplit = indexes[1] 
-
-        if(endOfSplit <= (cardElements.length -1)) {
-            setIndexes(prevIndexes => {
-                const newIndexes = prevIndexes.map( item => {
-                    return item + 3
-                })
-                return newIndexes
-            })
-        }
-    }
-
-    function prevIndexes(){
-
-        const startOfSplit = indexes[0] 
-
-        if (startOfSplit > 0) {
-            setIndexes(prevIndexes => {
-                const newIndexes = prevIndexes.map( item => {
-                    return item - 3
-                })
-                return newIndexes
-            })
-        }
-
-       
-    }
+    // function prevIndexes(){
+    //     const startOfSplit = indexes[0]
+    //     if (startOfSplit > 0) {
+    //         setIndexes(prevIndexes => {
+    //             const newIndexes = prevIndexes.map( item => {
+    //                 return item - 3
+    //             })
+    //             return newIndexes
+    //         })
+    //     }
+    // }
 
     return (
-        <div className="events-section"> 
-
-        <div className="events-btns">
-            <button onClick={prevIndexes}>Prev items</button>
-            <button onClick={nextIndexes}>Next items</button>
-        </div>
-         
-            <div className="events-carousel">
-                    {cardElements.slice(indexes[0],indexes[1])}  
-            </div>
-            
+        <div className="events-section" id="events">
+            {/* <div className="events-btns">
+                <button onClick={prevIndexes}>Prev items</button>
+                <button onClick={nextIndexes}>Next items</button>
+            </div> */}
+            <div className="card-container">{cardElements}</div>
         </div>
     );
 }

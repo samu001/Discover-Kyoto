@@ -3,6 +3,7 @@ import "./Footer.css";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 function Footer() {
     return (
@@ -10,7 +11,17 @@ function Footer() {
             <div className="footer-section">
                 <div className="footer-wrapper">
                     <div className="back-to-top">
-                        <button>Back to Top</button>
+                        <button>
+                            <Link
+                                to="nav"
+                                spy={true}
+                                smooth={true}
+                                offset={-20}
+                                duration={500}
+                            >
+                                Back to Top
+                            </Link>
+                        </button>
                     </div>
                     <div className="footer-links-wrapper">
                         <div className="travel">

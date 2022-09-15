@@ -92,7 +92,7 @@ function History() {
 
     return (
         <>
-            <div className="history-section">
+            <div className="history-section" id="history">
                 <div className="slider-hist">
                     <div className="selector">
                         <button className="silder-btn" onClick={moveUp}>

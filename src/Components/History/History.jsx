@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./History.css";
-import arrowDown from "../../Images/arrow-down.svg";
-import arrowUp from "../../Images/arrow-up.svg";
-import ArrowIcon from "./ArrowIcon";
 
 function History() {
     const titleData = [

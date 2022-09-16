@@ -9,22 +9,23 @@ function History() {
         "Modern Period",
         "Contemporary Age",
     ];
+
     const descData = [
-        "The Medival Period was a very period like no other cuse mevidval is in the name",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur soluta aperiam voluptate sunt possimus sit odit dolorum nemo consequuntur debitis a reiciendis harum dolorem placeat, est explicabo natus quisquam. Magni!",
-        "The EARLY Modern Period is convinient to live in, but you dont have cool swords",
-        "The Modern Period is convinient to live in, but you have even less swords",
-        "The Contemporarry Period is convinient to live in, but you have no swords at all, instead u got guns...",
+        "Ample archeological evidence suggests human settlement in the area of Kyoto began as early as the Paleolithic period, although not much published material is retained about human activity in the region before the 6th century, around which time the Shimogamo Shrine is believed to have been established",
+        "In the Sengoku period, the city suffered extensive destruction in the Ōnin War of 1467 tp 1477, and did not really recover until the mid-16th century. During the war, battles between samurai factions spilled into the streets, and came to involve court nobility (kuge) and religious factions as well. Nobles' mansions were transformed into fortresses",
+        "Throughout the Edo period, the economy of the city flourished as one of three major cities in Japan, the others being Osaka and Edo. At the end of the period, the Hamaguri rebellion of 1864 burned down 28,000 houses in the city, which showed the rebels' dissatisfaction towards the Tokugawa Shogunate",
+        "At the start of the Meiji period, the emperor's move from Kyoto to Tokyo in 1869 weakened the economy of Kyoto. The modern city of Kyoto was formed on April 1, 1889. The construction of Lake Biwa Canal in 1890 was one measure taken to revive the city. The population of the city exceeded one million in 1932",
+        "Kyoto became a city designated by government ordinance on September 1, 1956. In 1997, Kyoto hosted the conference that resulted in the protocol on greenhouse gas emissions (United Nations Framework Convention on Climate Change.",
     ];
     const imgData = [
-        "https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
-        "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
-        "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
-        "https://images.unsplash.com/photo-1468779065891-103dac4a7c48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGt5b3RvJTIwY2l0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60",
+        "https://images.unsplash.com/photo-1549521743-9c242554cefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+        "https://images.unsplash.com/photo-1557599254-f988f851b328?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+        "https://images.unsplash.com/photo-1593405844957-3854dae97a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "https://images.unsplash.com/photo-1528044229747-82406f99e7cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1993&q=80",
     ];
 
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(2);
 
     // When the state index change the whole component will be re render
     // Applying the custom classes
@@ -33,15 +34,19 @@ function History() {
     }
 
     function moveUp() {
-        setIndex((prevIndex) => {
-            return prevIndex - 1;
-        });
+        if (index > 0) {
+            setIndex((prevIndex) => {
+                return prevIndex - 1;
+            });
+        }
     }
 
     function moveDown() {
-        setIndex((prevIndex) => {
-            return prevIndex + 1;
-        });
+        if (index < titleData.length - 1) {
+            setIndex((prevIndex) => {
+                return prevIndex + 1;
+            });
+        }
     }
 
     const arrLi = titleData.map((item, i) => {
@@ -101,6 +106,7 @@ function History() {
                         </button>
                     </div>
                     <div className="description-hist">{description}</div>
+                    <div className="hist-overlay"></div>
                     {historyImg}
                 </div>
             </div>

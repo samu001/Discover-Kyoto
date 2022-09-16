@@ -16,7 +16,7 @@ function Hero() {
                             offset={-120}
                             duration={500}
                         >
-                            Events
+                            <p>Events</p>
                         </Link>
                     </li>
                     <li>
@@ -27,18 +27,7 @@ function Hero() {
                             offset={-120}
                             duration={500}
                         >
-                            Locations
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="history"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={500}
-                        >
-                            History
+                            <p className="text">Locations</p>
                         </Link>
                     </li>
                     <li>
@@ -49,7 +38,18 @@ function Hero() {
                             offset={-5}
                             duration={500}
                         >
-                            Featured
+                            <p>Featured</p>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="history"
+                            spy={true}
+                            smooth={true}
+                            offset={-135}
+                            duration={500}
+                        >
+                            <p>History</p>
                         </Link>
                     </li>
                 </ul>

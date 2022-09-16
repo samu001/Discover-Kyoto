@@ -28,7 +28,7 @@ export default function EventCard(props) {
                     <p>{props.description}</p>
                 </div>
 
-                <div className="card-btns">
+                <div className="card-btns-container">
                     <button className="card-more-btn">
                         <p>Learn More</p>
                         <p className="more-ico">
@@ -48,7 +48,6 @@ export default function EventCard(props) {
                     </button>
                 </div>
             </div>
-            {/* When click on location open google maps for that location */}
         </>
     );
 }

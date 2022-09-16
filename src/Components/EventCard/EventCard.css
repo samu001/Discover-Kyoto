@@ -49,7 +49,7 @@
   font-size: 16px;
 }
 
-.card-btns {
+.card-btns-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -67,12 +67,12 @@
 
 .card-more-btn {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   transition: all 0.2s ease-out;
 }
 
 .card-more-btn:hover {
-  background: #c7c8d4;
+  background: rgb(0, 0, 0,0.1);
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
@@ -86,32 +86,33 @@
   display: flex;
   border: 1px solid var(--red);
   color: var(--red);
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .card-dir-btn:hover {
   background: var(--red);
   color: white;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   cursor: pointer;
 }
 
 .loc-icon-not-hover {
   color: var(--red);
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .loc-icon-hover {
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   color: white;
-  /* margin-right: 2px; */
 }
 
 @media only screen and (max-width: 600px) {
   .card {
     max-width: 52%;
   }
-  
+  .card button {
+    width: 120px;
+  }
 }
 
 

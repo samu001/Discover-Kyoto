@@ -3,15 +3,15 @@ import "./Title.css";
 
 function Title(props) {
     const titleUIStyle = {
-        background: `${props.theme === "dark" ? "black" : "white"}`,
+        background: `${props.theme === "dark" ? "var(--black)" : "white"}`,
     };
 
     const lineStyle = {
-        background: `${props.theme === "dark" ? "#dfdfdf" : "black"}`,
+        background: `${props.theme === "dark" ? "#dfdfdf" : "var(--black)"}`,
     };
 
     const descStyle = {
-        color: `${props.theme === "dark" ? "#dfdfdf" : "black"}`,
+        color: `${props.theme === "dark" ? "#dfdfdf" : "var(--black)"}`,
     };
 
     return (

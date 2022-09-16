@@ -1,9 +1,10 @@
 /* The width of this was NOT coverting the whole page so this was not being centered */
 .locations-section {
-    /* display: block; */
+    background-color: var(--black);
     width: 100%;
     padding-bottom: 3rem;
 }
+
 
 .map {
     position: relative;

@@ -20,7 +20,7 @@ function App() {
             <Featured location={"Inari Temple"} />
             <Title
                 title="LOCATIONS"
-                theme="light"
+                theme="dark"
                 description="Discover different locations for every taste"
             />
             <Locations />

@@ -6,8 +6,13 @@ import History from "./Components/History/History";
 import Title from "./Components/UI/Title";
 import Footer from "./Components/Footer/Footer";
 import Featured from "./Components/FeaturedLocation/Featured";
+import React, { useEffect } from "react";
 
 function App() {
+    useEffect(() => {
+        document.title = "Discover Kyoto";
+    });
+
     return (
         <div className="App">
             <Hero />

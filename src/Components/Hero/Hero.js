@@ -72,7 +72,7 @@ function Hero() {
                     href="https://www.linkedin.com/in/samuel-perez-0a146b24a/"
                     target="_blank"
                 >
-                    Connect with me on Linkin!
+                    Connect with me on Linkedin!
                 </a>
             </div>
         </>

@@ -83,3 +83,14 @@
     color: white;
 }
 
+.disclaimer {
+    padding-top: 2.6rem;
+    background-color: var(--black);
+    color: #6e6e6e;
+    text-align: center;
+}
+
+.disclaimer a {
+    text-decoration: underline;
+    color: #6e6e6e;
+}

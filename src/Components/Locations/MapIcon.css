@@ -7,3 +7,10 @@
     padding: 0.4rem 0.2rem;
     cursor: default;
 }
+
+
+.map-icon img  {
+    width: 30px;
+    background-color: white;
+    border-radius: 15px;
+}

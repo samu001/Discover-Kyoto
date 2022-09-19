@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./MapIcon.css";
 import HoverBox from "./HoverBox";
-
+import { GiTempleGate } from "react-icons/gi";
 // This implementation with a single map item Element does not work
 
 export default function MapIcon(props) {
@@ -49,7 +49,12 @@ export default function MapIcon(props) {
                     img={props.img}
                     description={props.description}
                 />
-                <div className="icon">🏠</div>
+                <div className="icon">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/1690/1690171.png"
+                        alt=""
+                    />
+                </div>
             </div>
         </>
     );

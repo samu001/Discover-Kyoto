@@ -33,14 +33,6 @@ export default function MapIcon(props) {
         }
     }, [isHover]);
 
-    // const showHoverBox = (e) => {
-    //     setDisplay("hover-display");
-    // };
-
-    // const hideHoverBox = (e) => {
-    //     setDisplay("hover-not-display");
-    // };
-
     return (
         <>
             <div
@@ -55,6 +47,7 @@ export default function MapIcon(props) {
                     style={styles}
                     title={props.title}
                     img={props.img}
+                    description={props.description}
                 />
                 <div className="icon">🏠</div>
             </div>

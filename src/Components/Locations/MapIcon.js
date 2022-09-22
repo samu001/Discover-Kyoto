@@ -12,6 +12,8 @@ export default function MapIcon(props) {
         right: `${props.right}`,
     };
 
+    const iconImgUrl = props.iconImg;
+
     // State for the display class.
     const [display, setDisplay] = useState("hover-not-display");
     const [isHover, setIsHover] = useState(false);
@@ -46,14 +48,11 @@ export default function MapIcon(props) {
                     display={display}
                     style={styles}
                     title={props.title}
-                    img={props.img}
+                    img={props.placeImg}
                     description={props.description}
                 />
                 <div className="icon">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/1690/1690171.png"
-                        alt=""
-                    />
+                    <img src={iconImgUrl} alt="" />
                 </div>
             </div>
         </>

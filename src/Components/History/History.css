@@ -23,7 +23,6 @@
     color: white;
     overflow: hidden;
     margin: 0 auto;
-    /* background-color: rgb(0, 0, 0,0.5); */
 }
 
 .img-active {
@@ -33,6 +32,7 @@
     object-fit: cover;
     position: absolute;
     z-index: -1;
+    /* Make the images local so they load faster, transitions doesnt seem to be the problem */
     transition: height 0.4s;
 }
 
@@ -60,7 +60,6 @@
     font-weight: bold;
     margin: 1rem 0 1rem 0.5rem;
     cursor: pointer;
-    
 }
 
 .li-inactive {

@@ -2,15 +2,33 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: fit-content;
+    width: 80px;
     height: fit-content;
-    padding: 0.4rem 0.2rem;
     cursor: default;
+    justify-content: center;
+    align-items: center;
 }
 
-
 .map-icon img  {
-    width: 50px;
-    background-color: white;
-    border-radius: 15px;
+    width: 40px;
+}
+
+.location-title {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 820px) {
+    .map-icon img{
+        width: 32px;
+    }
+    
+    .location-title {
+        font-size: 12px;
+    }
+    
 }

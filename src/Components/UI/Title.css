@@ -2,22 +2,18 @@
     padding: 1.8rem 0;
     background: var(--black);
 }
-
-
+/* MAIN TITLE GRID */
 .title-grid {
   display: grid;
-  grid-template-columns: 0.2fr fit-content(100%) 1fr;
-  gap: 10px;
+  grid-template-columns: 20% fit-content(100%) 1fr ;
+  gap: 15px;
   margin: 0 4rem;
 }
 
 .title-grid h1 {
     color: var(--red);
-    width: fit-content;
-    margin: 0 2.4rem 1rem 2.4rem;
     font-weight: 200;
     letter-spacing: 4px;
-    
 }
 
 .cross-line {
@@ -27,8 +23,22 @@
     margin: auto 0;
 }
 
+/* DESCRIPTION GRID */
+.desc-grid {
+    display: grid;
+    grid-template-columns: 20% fit-content(100%) 1fr;
+    gap: 15px;
+    margin: 0 4rem;
+}
+
+
+
+.desc-line {
+    width: 100%;
+    margin: auto 0;
+}
+
 
 .title-desc{
     color: #dfdfdf;
-    margin-left: 20.7vw;
 }

@@ -14,7 +14,7 @@ function App() {
             <Title
                 title="EVENTS"
                 theme="dark"
-                description="You cannot miss this amazing activities around Kyoto"
+                description="You cannot miss these amazing activities around Kyoto"
             />
             <CurrentEvents />
             <Featured location={"Inari Temple"} />
@@ -27,7 +27,7 @@ function App() {
             <Title
                 title="HISTORY"
                 theme="dark"
-                description="A city with a rich history in every corner"
+                description="A city with a rich past and present history"
             />
             <History />
             <Footer />

@@ -19,11 +19,18 @@ function Title(props) {
             <div className="title-ui" style={titleUIStyle}>
                 <div className="title-grid">
                     <div className="cross-line" style={lineStyle}></div>
-                    <h1>{props.title}</h1>
+                    <div className="grid-title-container">
+                        <h1>{props.title}</h1>
+                    </div>
+
                     <div className="cross-line" style={lineStyle}></div>
                 </div>
-                <div className="title-desc" style={descStyle}>
-                    {props.description}
+                <div className="desc-grid">
+                    <div className="desc-line"></div>
+                    <div className="desc-container" style={descStyle}>
+                        {props.description}
+                    </div>
+                    <div className="desc-line"></div>
                 </div>
             </div>
         </>

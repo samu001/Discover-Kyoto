@@ -10,7 +10,7 @@
 
 .featured-info {
     display: block;
-    width: 440px;
+    max-width: 460px;
     text-align: center;
 }
 

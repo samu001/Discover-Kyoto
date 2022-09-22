@@ -7,12 +7,14 @@ function Featured() {
                 <div className="featured-info">
                     <h3>Featured Destination</h3>
                     <div className="line-fd"></div>
-                    <h4>Inaru Temple</h4>
+                    <h4>Kiyomizu-dera</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellat perferendis, quidem culpa dolorum pariatur
-                        amet, eligendi aspernatur optio ad reiciendis voluptate
-                        eum fugiat modi ratione praesentium.
+                        Kiyomizu-dera is located on the foothills of Mount
+                        Otowa, part of the Higashiyama mountain range that
+                        dominates eastern Kyoto. The main hall has a large
+                        veranda, that juts out over the hillside and offers
+                        impressive views of the city. A famous destination for
+                        all type of people.
                     </p>
                     <button>Explore</button>
                 </div>

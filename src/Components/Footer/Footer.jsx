@@ -27,11 +27,11 @@ function Footer() {
                         <div className="travel">
                             <ul className="footer-ul">
                                 <li>
-                                    <h3>Tours</h3>
+                                    <h3>About</h3>
                                 </li>
                                 <li>Landmarks</li>
-                                <li>About Kyoto</li>
-                                <li>Hotels</li>
+                                <li>Prefecture</li>
+                                <li>Travel Policies</li>
                             </ul>
                         </div>
                         <div className="events">
@@ -42,7 +42,7 @@ function Footer() {
                                 <li>Availability</li>
                                 <li>Security</li>
                                 <li>Delays</li>
-                                <li>More Information</li>
+                                <li>Information</li>
                             </ul>
                         </div>
                         <div className="tours">
@@ -50,28 +50,42 @@ function Footer() {
                                 <li>
                                     <h3>Tours</h3>
                                 </li>
-                                <li>East Tour</li>
-                                <li>West Tour</li>
-                                <li>South Tour</li>
+                                <li>Legal Info</li>
+                                <li>Refund Policy</li>
+                                <li>Availability</li>
                                 <li>Scheduling</li>
                             </ul>
                         </div>
                     </div>
                     <div className="copyrigth">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Velit ab reprehenderit, voluptatem qui neque porro nam
-                        error vero corporis iure.
+                        This webpage is a mockup website meant to show off
+                        different technical skills and creativity from the
+                        creator. It is not intended to represent accurate
+                        current events or services occurring in the city of
+                        Kyoto, Japan.
                     </div>
                     <div className="media-links">
-                        <p className="footer-icon">
+                        <a
+                            href="https://www.linkedin.com/in/samuel-perez-0a146b24a/"
+                            target="_blank"
+                            className="footer-icon"
+                        >
                             <FaTwitter />
-                        </p>
-                        <p className="footer-icon">
+                        </a>
+                        <a
+                            className="footer-icon"
+                            href="https://www.linkedin.com/in/samuel-perez-0a146b24a/"
+                            target="_blank"
+                        >
                             <AiFillInstagram />
-                        </p>
-                        <p className="footer-icon">
+                        </a>
+                        <a
+                            className="footer-icon"
+                            href="https://www.linkedin.com/in/samuel-perez-0a146b24a/"
+                            target="_blank"
+                        >
                             <BsFacebook />
-                        </p>
+                        </a>
                     </div>
                 </div>
             </div>

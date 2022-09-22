@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./MapIcon.css";
 import HoverBox from "./HoverBox";
-import { GiTempleGate } from "react-icons/gi";
-// This implementation with a single map item Element does not work
 
 export default function MapIcon(props) {
     let styles = {
@@ -12,7 +10,7 @@ export default function MapIcon(props) {
         right: `${props.right}`,
     };
 
-    const iconImgUrl = props.iconImg;
+    const image = <img src={require("../../Images/" + `${props.iconImg}`)} />;
 
     // State for the display class.
     const [display, setDisplay] = useState("hover-not-display");
@@ -20,9 +18,6 @@ export default function MapIcon(props) {
 
     function handleHover(e) {
         setIsHover((prevState) => {
-            console.log(
-                `is hovering ${!prevState} the place ${e.target.title}`
-            );
             return !prevState;
         });
     }
@@ -51,9 +46,8 @@ export default function MapIcon(props) {
                     img={props.placeImg}
                     description={props.description}
                 />
-                <div className="icon">
-                    <img src={iconImgUrl} alt="" />
-                </div>
+                {image}
+                <p className="location-title">{props.title}</p>
             </div>
         </>
     );

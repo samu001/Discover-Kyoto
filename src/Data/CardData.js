@@ -2,6 +2,7 @@ export default [
     {
         title: "Nigth Matsuri",
         location: "Nishiki Market",
+        locUrl: "https://www.google.com/maps/place/Nishiki+Market/@35.0049808,135.7626718,17z/data=!3m1!4b1!4m5!3m4!1s0x6001089ccd8ccb4f:0xb69ea31001ec6c9c!8m2!3d35.0049808!4d135.7648605",
         description:
             "Check all the food and games in our stunning Nigth festival, perfect fit for the whole family.",
         month: 2,
@@ -10,6 +11,7 @@ export default [
     {
         title: "Guided Tour",
         location: "Kyoto Station",
+        locUrl: "https://www.google.com/maps/place/Kyoto+Station/@34.9849887,135.7569952,16.38z/data=!4m5!3m4!1s0x600108ae918b02ef:0xb61a446e74a21c08!8m2!3d34.985849!4d135.7587667",
         description:
             "Join a personalized tour with a knowledgeable expert in Japanese culture and history.",
         month: 2,
@@ -18,6 +20,7 @@ export default [
     {
         title: "Montain Bike Track",
         location: "The Bamboo Forest",
+        locUrl: "https://www.google.com/maps/place/Kyoto+Bike+Tour+-+The+Bamboo+Forest+%26+Arashiyama/@35.0194942,135.670815,18z/data=!3m1!4b1!4m5!3m4!1s0x6001a99346427e6f:0xd42663eba40842ac!8m2!3d35.0194942!4d135.6719093",
         description:
             "Kyoto's scenic nature and mountains are perfect for an unforgettable bike tour.",
         month: 2,

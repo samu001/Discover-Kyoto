@@ -15,6 +15,7 @@ export default function Locations() {
                 description={item.description}
                 iconImg={item.iconImg}
                 placeImg={item.placeImg}
+                key={item.title}
             />
         );
     });

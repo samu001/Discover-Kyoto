@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./History.css";
 
 function History() {
+    // Put all of this info in a separate doc
     const titleData = [
         "Medival Age",
         "Edo Period",
@@ -27,8 +28,7 @@ function History() {
 
     const [index, setIndex] = useState(2);
 
-    // When the state index change the whole component will be re render
-    // Applying the custom classes
+    // When the state index change the whole component will be re render. Applying the custom classes
     function selectItem(i) {
         setIndex(i);
     }

@@ -7,7 +7,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "kinkaku.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1578469645735-d48a0fe89fb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=60",
     },
     {
         title: "Nijo Caslte",
@@ -17,7 +17,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "nijo.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1549090569-7e6d7734397d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=60",
     },
     {
         title: "Higashiyama Jisho-ji",
@@ -27,7 +27,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "higa.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1546617051-d1ed7918e6c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhpZ2FzaGl5YW1hJTIwamlzaG8lMjBqaXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
         title: "Kiyomizu-dera",
@@ -37,7 +37,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "dera.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1580345475401-56c1209923fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=697&q=80",
     },
     {
         title: "Toji",
@@ -47,7 +47,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "toji.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1558720822-4d4242a4d6f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80",
     },
     {
         title: "Tenryu-ji",
@@ -57,17 +57,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "ternryu.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-        title: "Tenryu-ji",
-        top: "32%",
-        left: "22%",
-        description:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
-        iconImg: "ternryu.png",
-        placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TenryujiBuilding.jpg/1920px-TenryujiBuilding.jpg",
     },
     {
         title: "Daigoji",
@@ -77,7 +67,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "Daigoji.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Momiji_Daigoji4.JPG/1280px-Momiji_Daigoji4.JPG",
     },
     {
         title: "Konzoji",
@@ -87,7 +77,7 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "konzoji.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://upload.wikimedia.org/wikipedia/commons/d/de/Konzoji_01.JPG",
     },
     {
         title: "Okura Sake Museum",
@@ -97,6 +87,6 @@ export default [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit assumenda ipsam.",
         iconImg: "sake.png",
         placeImg:
-            "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1571762450239-f0f047321444?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
     },
 ];

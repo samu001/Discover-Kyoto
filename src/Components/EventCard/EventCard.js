@@ -16,6 +16,10 @@ export default function EventCard(props) {
         setIconStyle("loc-icon-not-hover");
     }
 
+    function openLocationTab(url) {
+        window.open(url, "_blank", "noopener,noreferrer");
+    }
+
     return (
         <>
             <div className="card">
@@ -40,6 +44,7 @@ export default function EventCard(props) {
                         className="card-dir-btn"
                         onMouseEnter={handleHover}
                         onMouseLeave={hoverEnd}
+                        onClick={() => openLocationTab(props.locUrl)}
                     >
                         <p className={iconStyle}>
                             <HiOutlineLocationMarker />

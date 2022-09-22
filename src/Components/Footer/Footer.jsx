@@ -57,12 +57,14 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className="copyrigth">
-                        This webpage is a mockup website meant to show off
-                        different technical skills and creativity from the
-                        creator. It is not intended to represent accurate
-                        current events or services occurring in the city of
-                        Kyoto, Japan.
+                    <div className="disclaimer_">
+                        <p>
+                            This webpage is a mockup website meant to showcase
+                            different technical and creativite skills from the
+                            creator. It is not intended to represent accurate
+                            current events or services occurring in the city of
+                            Kyoto, Japan.
+                        </p>
                     </div>
                     <div className="media-links">
                         <a

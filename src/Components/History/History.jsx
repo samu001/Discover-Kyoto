@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./History.css";
-import imgA from "../../Images/history_a.jpg";
-import imgB from "../../Images/historyb.jpg";
 
 function History() {
     // Put all of this info in a separate doc
@@ -21,8 +19,8 @@ function History() {
         "Kyoto became a city designated by government ordinance on September 1, 1956. In 1997, Kyoto hosted the conference that resulted in the protocol on greenhouse gas emissions (United Nations Framework Convention on Climate Change.",
     ];
     const imgData = [
-        imgA,
-        imgB,
+        "https://images.unsplash.com/photo-1549521743-9c242554cefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+        "https://images.unsplash.com/photo-1557599254-f988f851b328?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
         "https://images.unsplash.com/photo-1593405844957-3854dae97a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
         "https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
         "https://images.unsplash.com/photo-1528044229747-82406f99e7cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1993&q=80",

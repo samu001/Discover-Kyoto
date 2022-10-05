@@ -12,7 +12,7 @@
 .map-img-wrapper {
     display: flex;
     position: relative;
-    min-width: 354px;
+    min-width: 380px;
     margin:auto;
     z-index: 1;
     width: 50%;

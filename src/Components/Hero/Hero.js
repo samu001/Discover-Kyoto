@@ -66,15 +66,15 @@ function Hero() {
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
-            <div className="disclaimer">
-                <h4>Webpage under construction. Thanks for visiting!</h4>
+            {/* <div className="disclaimer">
+                <h4>Thanks for visiting my project!</h4>
                 <a
                     href="https://www.linkedin.com/in/samuel-perez-0a146b24a/"
                     target="_blank"
                 >
                     Connect with me on Linkedin!
                 </a>
-            </div>
+            </div> */}
         </>
     );
 }

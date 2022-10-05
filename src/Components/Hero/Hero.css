@@ -25,7 +25,6 @@
     margin-right: auto;
     width: fit-content;
     z-index: 1;
-  
 }
 
 #hero-title {
@@ -33,8 +32,7 @@
     font-size: 42px;
     text-align: center;
     letter-spacing: 0.3rem;
-    font-weight: 300;
-    
+    font-weight: 300;  
 }
 
 #hero-title span {
@@ -93,4 +91,23 @@
 .disclaimer a {
     text-decoration: underline;
     color: #6e6e6e;
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .navbar ul {
+        width: 95%;
+    }
+    .navbar ul li {
+        padding: 0 4.5%;
+    }
+
+    #hero-title {
+        font-size: 32px;
+    }
 }

@@ -31,8 +31,6 @@
     margin: 0 4rem;
 }
 
-
-
 .desc-line {
     width: 100%;
     margin: auto 0;
@@ -41,4 +39,14 @@
 
 .title-desc{
     color: #dfdfdf;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .cross-line {
+        display: none;
+    }
+    .desc-grid {
+        display: block;
+    }
 }

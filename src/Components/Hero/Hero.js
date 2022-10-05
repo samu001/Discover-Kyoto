@@ -66,6 +66,11 @@ function Hero() {
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
+
+            <div className="img-backup-wrapper">
+                <img src="https://i.imgur.com/op7tkfX.jpg" alt="background" />
+            </div>
+
             {/* <div className="disclaimer">
                 <h4>Thanks for visiting my project!</h4>
                 <a

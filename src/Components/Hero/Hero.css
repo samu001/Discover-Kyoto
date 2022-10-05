@@ -16,6 +16,20 @@
     object-fit: cover;
 }
 
+
+.img-backup-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.img-backup-wrapper img {
+    width: 100%;
+}
+
 .overlay-hero {
     position: absolute;
     left: 0;

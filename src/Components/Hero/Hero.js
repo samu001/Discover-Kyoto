@@ -71,15 +71,18 @@ function Hero() {
                 <img src="https://i.imgur.com/op7tkfX.jpg" alt="background" />
             </div>
 
-            {/* <div className="disclaimer">
-                <h4>Thanks for visiting my project!</h4>
+            <div className="disclaimer">
+                <h4>
+                    Thanks for visiting my project! Some parts are still on
+                    development.
+                </h4>
                 <a
                     href="https://www.linkedin.com/in/samuel-perez-0a146b24a/"
                     target="_blank"
                 >
                     Connect with me on Linkedin!
                 </a>
-            </div> */}
+            </div>
         </>
     );
 }

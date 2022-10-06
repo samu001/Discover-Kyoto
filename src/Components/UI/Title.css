@@ -36,11 +36,9 @@
     margin: auto 0;
 }
 
-
 .title-desc{
     color: #dfdfdf;
 }
-
 
 @media only screen and (max-width: 600px) {
     .cross-line {

@@ -11,3 +11,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.event-selector-box {
+    max-width: 400px;
+    margin: 2rem auto;
+}
